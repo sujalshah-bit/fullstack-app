@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import { Routes, Route } from "react-router-dom";
+import Registration from "./components/Registration";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/signup" element={<Registration/>} />
       </Routes>
     </>
   );
