@@ -219,12 +219,35 @@ form > textarea{
 .error_box{
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-border-radius: 5px;
+  border-radius: 5px;
   background-color: #fff;
   height: 50px;
 }
 
+/* home page */
+.home_page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#fff 0deg 180deg,#c8e7fd  180deg 360deg);
+}
 
+.home_box{
+  padding: 10px;
+  max-width: 300px;
+  background-color: #ededed00;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  text-align: center;
+}
+.home_box > p{
+  text-align: center;
+  font-weight: 700;
+  font-size: large;
+  color: #0096FF;
+}
 
 
 
