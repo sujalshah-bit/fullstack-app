@@ -19,7 +19,7 @@ const Registration = () => {
     const PostData = async (e) =>{
         e.preventDefault()
         const{ name, email, Phone, Work, Password, cPassword} = user
-       const res = await fetch('http://localhost:5000/register',{
+       const res = await fetch('/register',{
             method:"POST",
             headers:{
                 "content-type":"application/json"
