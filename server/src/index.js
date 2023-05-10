@@ -1,8 +1,13 @@
 const express = require("express");
+ 
 
 const dotenv = require('dotenv')
 const app = express();
 dotenv.config({ path: './config.env'})
+
+app.use(express.json())
+app.use(require('../router/auth'))
+
 
 const PORT = process.env.PORT
 
@@ -16,9 +21,9 @@ const mid = (req, res, next) => {
   next();
 };
 
-app.get("/", (req, res) => {
-  res.send(`hello home`);
-});
+// app.get("/", (req, res) => {
+//   res.send(`hello home`);
+// });
 app.get("/about", mid, (req, res) => {
   res.send(`hello about`);
 });
